@@ -1,0 +1,384 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_flowstarter",
+				"type": "address"
+			}
+		],
+		"name": "approveFlowStarter",
+		"outputs": [
+			{
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "organization",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_admin",
+				"type": "address"
+			}
+		],
+		"name": "revokeAdmin",
+		"outputs": [
+			{
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_address",
+				"type": "address"
+			}
+		],
+		"name": "checkIsFlowStarter",
+		"outputs": [
+			{
+				"name": "isFlowStarter",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_docId",
+				"type": "string"
+			},
+			{
+				"name": "_signee",
+				"type": "address"
+			}
+		],
+		"name": "getSignature",
+		"outputs": [
+			{
+				"name": "signee",
+				"type": "address"
+			},
+			{
+				"name": "signed",
+				"type": "bool"
+			},
+			{
+				"name": "role",
+				"type": "string"
+			},
+			{
+				"name": "comment",
+				"type": "string"
+			},
+			{
+				"name": "approved",
+				"type": "bool"
+			},
+			{
+				"name": "blockNumber",
+				"type": "uint256"
+			},
+			{
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_admin",
+				"type": "address"
+			}
+		],
+		"name": "approveAdmin",
+		"outputs": [
+			{
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_docId",
+				"type": "string"
+			},
+			{
+				"name": "_role",
+				"type": "string"
+			},
+			{
+				"name": "_comment",
+				"type": "string"
+			},
+			{
+				"name": "_approve",
+				"type": "bool"
+			}
+		],
+		"name": "signDocument",
+		"outputs": [
+			{
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_docId",
+				"type": "string"
+			}
+		],
+		"name": "getDocument",
+		"outputs": [
+			{
+				"name": "docOwner",
+				"type": "address"
+			},
+			{
+				"name": "docHash",
+				"type": "string"
+			},
+			{
+				"name": "requiredSignees",
+				"type": "address[]"
+			},
+			{
+				"name": "numberApprovals",
+				"type": "uint256"
+			},
+			{
+				"name": "locked",
+				"type": "bool"
+			},
+			{
+				"name": "approved",
+				"type": "bool"
+			},
+			{
+				"name": "inApprovalFlow",
+				"type": "bool"
+			},
+			{
+				"name": "blockNumberStatus",
+				"type": "uint256"
+			},
+			{
+				"name": "timestampStatus",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_flowstarter",
+				"type": "address"
+			}
+		],
+		"name": "revokeFlowStarter",
+		"outputs": [
+			{
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_docId",
+				"type": "string"
+			},
+			{
+				"name": "_docHash",
+				"type": "string"
+			},
+			{
+				"name": "_requiredSignees",
+				"type": "address[]"
+			}
+		],
+		"name": "startApprovalFlow",
+		"outputs": [
+			{
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getOrganizationName",
+		"outputs": [
+			{
+				"name": "organizationName",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_address",
+				"type": "address"
+			}
+		],
+		"name": "checkIsAdmin",
+		"outputs": [
+			{
+				"name": "isAdmin",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "_organization",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "fallback"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "docId",
+				"type": "string"
+			}
+		],
+		"name": "ApprovalFlowStarted",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "docId",
+				"type": "string"
+			},
+			{
+				"indexed": true,
+				"name": "signee",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "role",
+				"type": "string"
+			}
+		],
+		"name": "DocumentSigned",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "docId",
+				"type": "string"
+			}
+		],
+		"name": "DocumentApproved",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "docId",
+				"type": "string"
+			},
+			{
+				"indexed": true,
+				"name": "signee",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "role",
+				"type": "string"
+			}
+		],
+		"name": "DocumentRejected",
+		"type": "event"
+	}
+]

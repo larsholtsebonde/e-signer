@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>e-Signer - Tamper-proof audit trails</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="images/signature_icon.png">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./scripts/sha256.js"></script>
+		<script src="./scripts/script1.js"></script>
+		<script src="./scripts/contractInteraction.js"></script>
+	</head>
+
+  <body>
+    <h1>Doc to hash</h1>
+    <p>
+      <textarea id=text-input rows="4" cols="50" placeholder="Write some text to hash..."></textarea>
+      <br>
+      <button id=button-hash type="button">Hash!</button>
+    </p>
+    <p id=p-hash><i>Your hash will come here...</i></p>
+		<hr>
+		<h1>DocSigner</h1>
+		<p id=p-organization-name>
+		</p>
+		<h2>Approve Flow Starter</h2>
+		<p id=p-approve-flow-starter>
+			<input id=input-approve-flow-starter type=text placeholder="Address"></input>
+      <br>
+      <button id=button-approve-flow-starter type="button">Approve as Flow Starter</button>
+		</p>
+		<h2>Revoke Flow Starter</h2>
+		<p id=p-revoke-flow-starter>
+			<input id=input-revoke-flow-starter type=text placeholder="Address"></input>
+      <br>
+      <button id=button-revoke-flow-starter type="button">Revoke as Flow Starter</button>
+		</p>
+		<h2>Approve Admin</h2>
+		<p id=>
+		</p>
+		<h2>Revoke Admin</h2>
+		<p id=>
+		</p>
+		<h2>Start Approval Flow</h2>
+		<p id=p-start-approval-flow>
+			<input id=input-start-approval-flow-doc-id type=text placeholder="Document ID"></input><br>
+			<input id=input-start-approval-flow-doc-hash type=text placeholder="Document hash"></input><br>
+			<input id=input-start-approval-flow-signee type=text placeholder="Address of signee"></input>
+      <br>
+      <button id=button-start-approval-flow type="button">Start Approval Flow</button>
+		</p>
+		<h2>Sign Document</h2>
+		<p id=p-sign-document>
+			<input id=input-sign-document-doc-id type=text placeholder="Document ID"></input><br>
+			<input id=input-sign-document-role type=text placeholder="Role"></input><br>
+			<input id=input-sign-document-comment type=text placeholder="Comment"></input><br>
+			<form id=input-sign-document-approval>
+				<input name=input-sign-document-approval type=radio value=true></input> Approve<br>
+				<input name=input-sign-document-approval type=radio value=false></input> Reject
+			</form>
+      <br>
+      <button id=button-sign-document type="button">Sign Document</button>
+		</p>
+		<h2>Check if Admin</h2>
+		<p id=p-is-admin>
+		</p>
+		<h2>Check if Flow Starter</h2>
+		<p id=p-is-flow-starter>
+		</p>
+		<h2>Get Document</h2>
+		<p id=p-get-document>
+			<input id=input-get-document-doc-id type=text placeholder="Document ID"></input>
+      <br>
+      <button id=button-get-document type="button">Get Document</button>
+		</p>
+		<h2>Get Signature</h2>
+		<p id=p-get-signature>
+			<input id=input-get-signature-doc-id type=text placeholder="Document ID"></input><br>
+			<input id=input-get-signature-signee type=text placeholder="Address of signee"></input>
+      <br>
+      <button id=button-get-signature type="button">Get Document</button>
+		</p>
+  </body>
+</html>
