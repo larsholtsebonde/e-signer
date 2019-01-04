@@ -2,14 +2,14 @@
 
 <html>
 	<head>
-		<title>e-Signer - Tamper-proof audit trails</title>
+		<title>e-Signer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" href="images/signature_icon.png">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./scripts/sha256.js"></script>
-		<script src="./scripts/script1.js"></script>
-		<script src="./scripts/contractInteraction.js"></script>
+    <script src="./js/sha256.js"></script>
+		<script src="./js/script1.js"></script>
+		<script src="./js/contractInteraction.js"></script>
 	</head>
 
   <body>
@@ -46,7 +46,10 @@
 		<p id=p-start-approval-flow>
 			<input id=input-start-approval-flow-doc-id type=text placeholder="Document ID"></input><br>
 			<input id=input-start-approval-flow-doc-hash type=text placeholder="Document hash"></input><br>
-			<input id=input-start-approval-flow-signee type=text placeholder="Address of signee"></input>
+			<input id=input-start-approval-flow-signee1 type=text placeholder="Address of signee 1"></input><br>
+			<input id=input-start-approval-flow-signee2 type=text placeholder="Address of signee 2"></input><br>
+			<input id=input-start-approval-flow-signee3 type=text placeholder="Address of signee 3"></input><br>
+			<input id=input-start-approval-flow-signee4 type=text placeholder="Address of signee 4"></input>
       <br>
       <button id=button-start-approval-flow type="button">Start Approval Flow</button>
 		</p>

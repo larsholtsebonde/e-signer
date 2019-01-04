@@ -91,11 +91,34 @@ $(document).ready(function() {
     var docId = $("#input-start-approval-flow-doc-id").val();
     var docHash = $("#input-start-approval-flow-doc-hash").val();
     var signees = new Array(0);
-    var signee = $("#input-start-approval-flow-signee").val();
-    if (!checkAddress(signee)) {
-      return false;
+    var signee1 = $("#input-start-approval-flow-signee1").val();
+    var signee2 = $("#input-start-approval-flow-signee2").val();
+    var signee3 = $("#input-start-approval-flow-signee3").val();
+    var signee4 = $("#input-start-approval-flow-signee4").val();
+    if (signee1 != "") {
+      if (!checkAddress(signee1)) {
+        return false;
+      }
+      signees.push(signee1);
     }
-    signees.push(signee);
+    if (signee2 != "") {
+      if (!checkAddress(signee2)) {
+        return false;
+      }
+      signees.push(signee2);
+    }
+    if (signee3 != "") {
+      if (!checkAddress(signee3)) {
+        return false;
+      }
+      signees.push(signee3);
+    }
+    if (signee4 != "") {
+      if (!checkAddress(signee4)) {
+        return false;
+      }
+      signees.push(signee4);
+    }
     if (docId.length <= 0) {
       alert("Please fill document ID");
     }
